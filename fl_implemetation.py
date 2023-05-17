@@ -21,13 +21,8 @@ from tensorflow.keras import backend as K
 
 from fl_mnist_implementation_tutorial_utils import *
 
-#declear path to your mnist data folder
 img_path = '/path/to/your/training/dataset'
-
-#get the path list using the path object
 image_paths = list(paths.list_images(img_path))
-
-#apply our function
 image_list, label_list = load(image_paths, verbose=10000)
 
 #binarize the labels
